@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/stylesheets/home.css" rel="stylesheet">
+    <title>Square</title>
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <section class="carrossel">
+        <input id="arrowLeft" type="image" src="images/icones/arrow_left.png">
+        <img id="imgCarrossel" src="images/carrossel/img1.jpg" alt="sala industrial">
+        <input id="arrowRight" type="image" src="images/icones/arrow_right.png">
+    </section>
+    <section class="maisVendidos">
+        <h3>Mais Vendidos</h3>
+        <ul id="listaMaisVendidos">
+            <li><a href=""><img src="images/mais_vendidos/banco.jpg" alt="banco industrial"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/cadeira.jpg" alt="cadeira idustrial"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/estante.jpg" alt="estante industrial"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/mesa_banco.jpg" alt="mesa com banco industrial"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/mesa_preta.jpg" alt="mesa industrial preta"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/rack.jpg" alt="rack industrial"></a></li>
+            <li><a href=""><img src="images/mais_vendidos/sofa.jpg" alt="sofá industrial"></a></li>
+        </ul>
+    </section>
+    <section class="ambientes">
+        <button id="botaoSala"><a href="">Sala</a></button>
+        <button id="botaoEscritorio"><a href="">Escritório</a></button>
+        <button id="botaoQuarto"><a href="">Quarto</a></button>
+        <button id="botaoCozinha"><a href="">Cozinha</a></button>
+    </section>
+    <%- include('./partials/footer') %>
+</body>
+</html>

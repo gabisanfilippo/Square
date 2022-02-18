@@ -1,0 +1,26 @@
+.footer ul{
+    list-style: none;
+    line-height: 25px;
+}
+.social img{
+    width: 50px;
+    padding: 5px;
+}
+.footer{
+    background-color: #4b3621 ;
+    color: #ffbf00;
+    display: flex;
+    justify-content: space-around;
+}
+h4{
+    text-align: center;
+    padding-top: 15px;
+}
+#idMapaCategorias{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color:#ffbf00;
+}
