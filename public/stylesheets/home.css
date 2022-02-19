@@ -73,3 +73,19 @@ body{
     padding-right: 30px;
     padding-left: 30px;
 }
+
+@media (max-width: 1440px){
+    .maisVendidos img{
+        width: 20vh;
+        margin: 10%;
+    }
+    #listaMaisVendidos{
+        flex-wrap: wrap;
+    }
+    .ambientes{
+        flex-wrap: wrap;
+    }
+    .botaoAmbientes{
+        margin: 5%;
+    }
+}

@@ -92,3 +92,27 @@ body{
     color: #FFBF00;
     background-color: #4b3621;
 }
+.hamburguer{
+    display: none;
+}
+
+@media (max-width: 1440px)  {
+    #divBotoesBarraDePesquisa{
+        display: none;
+    }
+    .hamburguer{
+        display: flex;
+    }
+    .hamburguer img{
+        width: 6vh;
+    }
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1%;
+    }
+    #navMenu{
+        display: none;
+    }
+}

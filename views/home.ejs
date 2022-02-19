@@ -10,7 +10,7 @@
 <body>
     <%- include('./partials/header') %>
     <section class="carrossel">
-        <input id="arrowLeft" type="image" src="images/icones/arrow_left.png">
+        <input id="arrowLeft" type="image" src="/images/icones/arrow_left.png">
         <img id="imgCarrossel" src="images/carrossel/img1.jpg" alt="sala industrial">
         <input id="arrowRight" type="image" src="images/icones/arrow_right.png">
     </section>
@@ -27,10 +27,10 @@
         </ul>
     </section>
     <section class="ambientes">
-        <button id="botaoSala"><a href="">Sala</a></button>
-        <button id="botaoEscritorio"><a href="">Escritório</a></button>
-        <button id="botaoQuarto"><a href="">Quarto</a></button>
-        <button id="botaoCozinha"><a href="">Cozinha</a></button>
+        <button class="botaoAmbientes" id="botaoSala"><a href="">Sala</a></button>
+        <button class="botaoAmbientes" id="botaoEscritorio"><a href="">Escritório</a></button>
+        <button class="botaoAmbientes" id="botaoQuarto"><a href="">Quarto</a></button>
+        <button class="botaoAmbientes" id="botaoCozinha"><a href="">Cozinha</a></button>
     </section>
     <%- include('./partials/footer') %>
 </body>

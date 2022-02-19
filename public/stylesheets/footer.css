@@ -24,3 +24,29 @@ a{
     text-decoration: none;
     color:#ffbf00;
 }
+
+@media (max-width: 1440px) {
+    .footer{
+        flex-direction: column;
+        padding: 1%;
+    }
+    #idMapaCategorias{
+        align-items: center;
+        justify-content: center;
+    }
+    .ajuda li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .square li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
