@@ -1,0 +1,23 @@
+.iconeCarrinho img{
+    width: 10vh;
+}
+.iconeCarrinho{
+    display: flex;
+    align-items: center;
+    color: #4B3621;
+    font-size: larger;
+    margin-left: 10%;
+    padding: 2%;
+}
+table img{
+    width: 10vh;
+}
+table{
+    width: 100vw;
+}
+th{
+    width: 20vw;
+}
+td{
+    width: 20vw;
+}
