@@ -13,33 +13,35 @@
         <img src="/images/icones/cart.png" alt="carrinho">
         <h1>Carrinho</h1>
     </section>
-    <table>
-        <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Valor unitário</th>
-                <th>Quantidade</th>
-                <th>Valor total</th>
-                <th>&nbsp;</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><img src="/images/mais_vendidos/banco.jpg"></td>
-                <td>R$200,00</td>
-                <td>
-                    <img src="">
-                    1
-                    <img src="">
-                </td>
-                <td>R$200,00</td>
-                <td>
-                    <img src="">
-                    Remover
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <section class="carrinho">
+        <div class="emColuna">
+            <h3>Produto</h3>
+            <div class="produto">
+                <a href=""><img src="\images\mais_vendidos\banco.jpg" alt=""></a>
+                <p>Cadeira</p>
+            </div>
+        </div>
+        <div class="emColuna">
+            <h3>Valor Unitário</h3>
+            <p>R$200,00</p>
+        </div>
+        <div class="emColuna">
+            <h3>Quantidade</h3>
+            <div class="emLinha" id="quantidade">
+                <a href=""><button>-</button></a>
+                <p>1</p>
+                <a href=""><button>+</button></a>
+            </div>
+        </div>
+        <div class="emColuna">
+            <h3>Valor total</h3>
+            <p>R$200,00</p>
+        </div>
+        <div class="emColuna">
+            <h3 id="h3Remover">.</h3>
+            <a href=""><p id="remover">Remover</p></a>
+        </div>
+    </section>
     <%- include('./partials/footer') %>
 </body>
 </html>

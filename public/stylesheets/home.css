@@ -2,30 +2,34 @@ body{
     margin: 0;
     background-color: #e9e9e9;
 }
+
 .carrossel{
-    display: flex;
-    align-items: center;
-    margin: 0;
-}
-#arrowLeft{
-    width: 50px;
-    height: 100px;
-    align-items: center;
-    vertical-align: center;
-    position: absolute;
-}
-#arrowRight{
-    width: 50px;
-    height: 100px;
-    align-items: center;
-    vertical-align: center;
-    position:absolute;
-    margin-left: 96%;
-}
-#imgCarrossel{
     width: 100%;
+    overflow: hidden;
+}
+.fotos{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.carrossel img{
+    width: 19.9%;
+}
+@keyframes animacao {
+    0% {margin-left: 0;}
+    17% {margin-left: 0;}
+    22% {margin-left: -100%;}
+    37% {margin-left: -100%;}
+    42% {margin-left: -200%;}
+    57% {margin-left: -200%;}
+    62% {margin-left: -300%;}
+    77% {margin-left: -300%;}
+    82% {margin-left: -400%;}
+    100% {margin-left: -400%;}
 }
 
+/* mais vendidos */
 .maisVendidos img{
     width: 80%;
 }

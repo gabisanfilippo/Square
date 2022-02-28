@@ -1,6 +1,8 @@
+const carrosselModel = require("../models/carrossel.json")
+
 var homeController = {
     home: (req,res) => {
-        res.render('home')
+        res.render('home', {images: carrosselModel})
     }
 }
 

@@ -10,9 +10,11 @@
 <body>
     <%- include('./partials/header') %>
     <section class="carrossel">
-        <input id="arrowLeft" type="image" src="/images/icones/arrow_left.png">
-        <img id="imgCarrossel" src="images/carrossel/img1.jpg" alt="sala industrial">
-        <input id="arrowRight" type="image" src="images/icones/arrow_right.png">
+        <div class="fotos">
+            <% for(let image of images) { %>
+                <img src="<%= image.img %>" alt="Ambientes com decoração industrial">
+            <% } %>
+        </div>
     </section>
     <section class="maisVendidos">
         <h3>Mais Vendidos</h3>
