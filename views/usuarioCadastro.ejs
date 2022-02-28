@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\stylesheets\usuarioCadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <section class="cadastro">
+        <form action="/users/cadastro" method="post" class="formulario">
+            <h1>Crie sua conta!</h1>
+            <input type="text" name="nome" id="nome" placeholder="Nome:" class="campos">
+            <input type="email" name="email" id="email" placeholder="Email:" class="campos">
+            <input type="password" name="senha" id="senha" placeholder="Senha:" class="campos">
+            <input type="tel" name="celular" id="celular" placeholder="Celular:" class="campos"> 
+            <button type="submit"  class="campos">Enviar</button>
+        </form>
+    </section>
+    <%- include('./partials/footer') %>
+</body>
+</html>
