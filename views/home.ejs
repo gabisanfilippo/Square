@@ -19,13 +19,9 @@
     <section class="maisVendidos">
         <h3>Mais Vendidos</h3>
         <ul id="listaMaisVendidos">
-            <li><a href=""><img src="images/mais_vendidos/banco.jpg" alt="banco industrial"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/cadeira.jpg" alt="cadeira idustrial"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/estante.jpg" alt="estante industrial"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/mesa_banco.jpg" alt="mesa com banco industrial"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/mesa_preta.jpg" alt="mesa industrial preta"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/rack.jpg" alt="rack industrial"></a></li>
-            <li><a href=""><img src="images/mais_vendidos/sofa.jpg" alt="sofá industrial"></a></li>
+            <% for(let vendidos of maisVendidos) { %>
+                <a href=""><img src="<%= vendidos.img %>" alt=""></a>
+            <% } %>
         </ul>
     </section>
     <section class="ambientes">
