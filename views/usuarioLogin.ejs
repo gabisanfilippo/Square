@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="\stylesheets\usuarioCadastro.css">
-    <title>Cadastro</title>
+    <link rel="stylesheet" href="\stylesheets\usuarioLogin.css">
+    <title>Login</title>
 </head>
 <body>
     <%- include('./partials/header') %>
     <section class="cadastro">
-        <form action="/users/cadastro" method="post" class="formulario">
-            <h1>Crie sua conta!</h1>
-            <input type="text" name="nome" id="nome" placeholder="Nome:" required class="campos">
+        <form action="/users/login" method="post" class="formulario">
+            <h1>Entre na sua conta!</h1>
             <input type="email" name="email" id="email" placeholder="Email:" required class="campos">
-            <input type="password" name="senha" id="senha" placeholder="Senha:" required class="campos">
-            <input type="tel" name="celular" id="celular" placeholder="Celular:" required class="campos"> 
+            <input type="password" name="senha" id="senha" placeholder="Senha:" required class="campos"> 
             <button type="submit"  class="campos">Enviar</button>
         </form>
     </section>

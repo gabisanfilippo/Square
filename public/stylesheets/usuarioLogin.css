@@ -1,7 +1,7 @@
 .formulario{
     width: 75%;
     height: 75vh;
-    background-color: #4B3621;
+    background-color:#E7AD01;
     margin: 5%;
     display: flex;
     flex-direction: column;
@@ -19,11 +19,11 @@
     justify-content: center;
 }
 .formulario button{
-    background-color: #E7AD01;
-    color: #4B3621;
+    background-color:#4B3621;
+    color:#E7AD01;
     border: none;
     font-weight: 900;
 }
 h1{
-    color: #E7AD01;
+    color:#4B3621;
 }
