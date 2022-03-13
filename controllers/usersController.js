@@ -1,9 +1,8 @@
-const usuariosModel = require("../models/usuarios.json")
+const usuariosModel = require("../models/users.json")
 
 const bcrypt = require('bcrypt')
 var fs = require("fs")
 
-console.log(__dirname + "../model")
 const usersController = {
     exibeCadastro: (req, res) =>{
         res.render('usuarioCadastro')
@@ -12,7 +11,8 @@ const usersController = {
         let {nome, email, senha, celular} = req.body
         const hash = bcrypt.hashSync(senha, 10)
         const dados = {nome:nome, email:email, senha:hash, celular:celular}
-        fs.writeFileSync("users.json", JSON.stringify(dados))
+        usuariosModel.push(dados)
+        fs.appendFileSync("./models/users.json", JSON.stringify(usuariosModel), null, 4)
         res.send(dados)
     },
     exibeLogin: (req,res) => {

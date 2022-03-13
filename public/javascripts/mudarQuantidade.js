@@ -1,7 +1,11 @@
-let quantidade = document.getElementById("quantidadeItens").innerHTML
 function decrementa(){
-    console.log(quantidade)
-    quantidade = quantidade-1
-    console.log(quantidade)
+    let quantidade = document.getElementById("quantidadeItens").innerHTML.value
+    quantidade = quantidade -1
+    document.getElementById("quantidadeItens").innerHTML = quantidade
 }
 
+function incrementa(){
+    let quantidade = document.getElementById("quantidadeItens").innerHTML.value
+    quantidade = quantidade +1
+    document.getElementById("quantidadeItens").innerHTML = quantidade
+}

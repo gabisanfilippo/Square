@@ -1,4 +1,4 @@
-const usuariosModel = require("../models/usuarios.json")
+const usuariosModel = require("../models/users.json")
 
 let cadastroRepetidoMiddleware = (req,res,next) => {
     let {email} = req.body

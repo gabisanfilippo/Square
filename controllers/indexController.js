@@ -1,5 +1,5 @@
 const carrosselModel = require("../models/carrossel.json")
-const maisVendidosModel = require("../models/usuarios.json")
+const maisVendidosModel = require("../models/maisVendidos.json")
 
 var homeController = {
     home: (req,res) => {

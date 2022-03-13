@@ -1,4 +1,4 @@
-const usuariosModel = require("../models/usuarios.json")
+const usuariosModel = require("../models/users.json")
 
 const bcrypt = require('bcrypt')
 

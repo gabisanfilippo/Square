@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
-const usuariosModel = require("../models/usuarios.json")
+const usuariosModel = require("../models/users.json")
 
 const usersController = require("../controllers/usersController")
 

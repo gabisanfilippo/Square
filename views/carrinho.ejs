@@ -9,6 +9,8 @@
     
 </head>
 <body>
+    <script type="text/javascript" src="/javascripts/mudarQuantidade.js"></script>
+    
     <%- include('./partials/header') %>
     <section class="iconeCarrinho">
         <img src="/images/icones/cart.png" alt="carrinho">
@@ -31,9 +33,9 @@
             <% let quantidade = 100 %>
             <div class="emLinha" id="quantidade">
                 
-                <button onclick="decrementa()">-</button>
+                <a href=""><button onclick="decrementa()">-</button></a>
                 <p id="quantidadeItens"><%= quantidade %></p>
-                <a href=""><button>+</button></a>
+                <a href=""><button onclick="incrementa()">+</button></a>
             </div>
         </div>
         <div class="emColuna">
@@ -46,6 +48,7 @@
         </div>
     </section>
     <%- include('./partials/footer') %>
+    <script type="text/javascript" src="/javascripts/mudarQuantidade.js"></script>
 </body>
-<script src="../public/javascripts/mudarQuantidade.js"></script>
+
 </html>
