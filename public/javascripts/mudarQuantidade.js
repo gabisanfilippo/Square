@@ -6,6 +6,6 @@ function decrementa(){
 
 function incrementa(){
     let quantidade = document.getElementById("quantidadeItens").value
-    quantidade = quantidade +1
-    document.getElementById("quantidadeItens").innerHTML.value = quantidade
+    quantidade = (quantidade*1) +1
+    document.getElementById("quantidadeItens").value = quantidade
 }

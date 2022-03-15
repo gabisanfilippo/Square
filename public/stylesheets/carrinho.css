@@ -26,12 +26,13 @@
 }
 #quantidade{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 button{
-    background-color: red;
-    
+    cursor: pointer;
     padding: 20px;
+    background-color: none;
+    border: none;
 }
 .emColuna a{
     color: black;
@@ -51,4 +52,7 @@ button{
 }
 img{
     width: 250%;
+}
+input {
+    width: 10%;
 }
