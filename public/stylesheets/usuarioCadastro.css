@@ -9,6 +9,7 @@
     justify-content: center;
     
 }
+
 .campos{
     padding: 1%;
     width: 50%;
@@ -17,6 +18,7 @@
 .cadastro{
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 .formulario button{
     background-color: #E7AD01;

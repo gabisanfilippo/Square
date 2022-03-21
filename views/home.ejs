@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/stylesheets/home.css" rel="stylesheet">
+
+    <!--swiper-->
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+    
     <title>Square</title>
 </head>
 <body>
+    
+    
     <%- include('./partials/header') %>
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide"><img src="images/carrossel/img1.jpg" alt="Ambientes com decoração industrial"></div>
+            <div class="swiper-slide"><img src="images/carrossel/img2.jpg" alt="Ambientes com decoração industrial"></div>
+            <div class="swiper-slide"><img src="images/carrossel/img3.jpg" alt="Ambientes com decoração industrial"></div>
+            <div class="swiper-slide"><img src="images/carrossel/img4.jpg" alt="Ambientes com decoração industrial"></div>
+            <div class="swiper-slide"><img src="images/carrossel/img5.jpg" alt="Ambientes com decoração industrial"></div>
+        ...
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+
+
+<!--
     <section class="carrossel">
         <div class="fotos">
             <% for(let image of images) { %>
@@ -16,6 +42,7 @@
             <% } %>
         </div>
     </section>
+    -->
     <section class="maisVendidos">
         <h3>Mais Vendidos</h3>
         <ul id="listaMaisVendidos">
@@ -31,5 +58,9 @@
         <button class="botaoAmbientes" id="botaoCozinha"><a href="">Cozinha</a></button>
     </section>
     <%- include('./partials/footer') %>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="javascripts/swiper.js"></script>
+
 </body>
 </html>

@@ -96,14 +96,15 @@ body{
     display: none;
 }
 
+
 @media (max-width: 1440px)  {
     #divBotoesBarraDePesquisa{
         display: none;
     }
-    .hamburguer{
-        display: flex;
+    .hamburguer, .toggle{
+        display: block;
     }
-    .hamburguer img{
+    .hamburguer img, .toggle{
         width: 6vh;
     }
     .header{
@@ -115,4 +116,61 @@ body{
     #navMenu{
         display: none;
     }
+    #barraDePesquisa{
+        width: 30vw;
+    }
+    /* menu */
+
+    nav.show .menu{  
+        display: block;      
+        background-color: #FFBF00;
+        color: #4b3621;
+        height: 100%;
+        width: 100vw;
+        position: fixed;
+        z-index: 2;
+        display: grid;
+        place-content: center;
+    }
+
+    nav.show .close{
+        display: block;
+        position: fixed;
+        z-index: 3;
+        box-sizing: border-box;
+        text-align: right;
+        top: 20px;
+        right: 1rem;
+        width: 20vw;
+    }
+
+    nav .hamburguer{
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+    }
+
+    nav.show .hamburguer{
+        display: none;
+
+    }
+    
+    nav .close{
+        display: none;
+    }
+
+    nav .menu{
+        display: none;
+    }
+
+    .toggle{
+        cursor: pointer;
+    }
+    .menu ul, .menu a{
+        font-size:x-large;
+        color: #4b3621;
+        list-style: none;
+        line-height: 2rem;
+    }
+    
 }

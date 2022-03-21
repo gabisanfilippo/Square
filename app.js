@@ -3,12 +3,23 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var session = require('express-session')
+
 
 var indexRouter = require('./routes/indexRouter');
 var usersRouter = require('./routes/usersRouter');
 var produtosRouter = require('./routes/produtosRouter')
 
 var app = express();
+
+//session
+app.use(session({
+  secret: 'wradawrada',
+  resave: true,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}))
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

@@ -3,6 +3,22 @@ body{
     background-color: #e9e9e9;
 }
 
+img{
+    cursor: pointer;
+}
+
+/*carrossel */
+
+.swiper {
+    width: 100%;
+    height: 20rem;
+    overflow: hidden;
+  }
+
+
+
+
+/*
 .carrossel{
     width: 100%;
     overflow: hidden;
@@ -27,7 +43,7 @@ body{
     77% {margin-left: -300%;}
     82% {margin-left: -400%;}
     100% {margin-left: -400%;}
-}
+} */
 
 /* mais vendidos */
 .maisVendidos img{
@@ -83,6 +99,9 @@ body{
         width: 20vh;
         margin: 10%;
     }
+    .maisVendidos{
+        width: 90vw;
+    }
     #listaMaisVendidos{
         flex-wrap: wrap;
     }
@@ -92,4 +111,6 @@ body{
     .botaoAmbientes{
         margin: 5%;
     }
+    
+    
 }

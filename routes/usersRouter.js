@@ -4,6 +4,7 @@ var router = express.Router();
 
 const usuariosModel = require("../models/users.json")
 
+
 const usersController = require("../controllers/usersController")
 
 const emptyCadastroMiddleware = require("../Middlewares/emptyCadastroMiddleware")

@@ -7,7 +7,9 @@
     <link href="/stylesheets/header.css" rel="stylesheet">
 </head>
 <body>
+    
     <header>
+        
         <div class="header">
             <div>
                 <a href="/"><img id="logo" src="\images\logo\LogoP_preto.png" alt="logo"></a>
@@ -18,15 +20,45 @@
                     <input id="barraDePesquisa" type="text" placeholder="Pesquisar...">
                 </form>
             </div>
-            <ul id="divBotoesBarraDePesquisa">
-                <button id="botaoCarrinho" href=""><a href="/produtos/carrinho">Carrinho</a></button>
-                <button id="botaoMeusPedidos" href=""><a href="">Meus Pedidos</a></button>
-                <button id="botaoCadastre" href=""><a href="/users/cadastro">Cadastre-se</a></button>
-                <button id="botaoLogin" href=""><a href="/users/login">Login</a></button>
-            </ul>
-            <div class="hamburguer">
-                <a><img src="/images/icones/hamburguer.png" alt="hamburguer"></a>
-            </div>
+            <nav>
+                <ul id="divBotoesBarraDePesquisa">
+                    <button id="botaoCarrinho" href=""><a href="/produtos/carrinho">Carrinho</a></button>
+                    <button id="botaoMeusPedidos" href=""><a href="">Meus Pedidos</a></button>
+                    <button id="botaoCadastre" href=""><a href="/users/cadastro">Cadastre-se</a></button>
+                    <button id="botaoLogin" href=""><a href="/users/login">Login</a></button>
+                </ul>
+            </nav>
+            <nav class="menuMobile">
+                <div class="toggle close">x</div>
+                <div class="toggle hamburguer"><img src="/images/icones/hamburguer.png" alt=""></div>
+                <div class="menu">
+                    <div>
+                        <h1>Perfil</h1>
+                        <ul>
+                            <li><a href="/users/cadastro">Cadastre-se</a></li>
+                            <li><a href="/users/login">Login</a></li>
+                            <li><a href="/produtos/carrinho">Carrinho</a></li>
+                            <li><a href="">Meus Pedidos</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h1>Categorias</h1>
+                        <ul>
+                            <li><a href="">Mesas</a></li>
+                            <li><a href="">Estantes</a></li>
+                            <li><a href="">Cadeiras</a></li>
+                            <li><a href="">Bancos</a></li>
+                            <li><a href="">Sofás</a></li>
+                            <li><a href="">Armários</a></li>
+                            <li><a href="">Guarda-roupas</a></li>
+                            <li><a href="">Racks</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </nav>
+            
+            
         </div>
         <nav id="navMenu">
             <button class="botaoMenu" href=""><a href="">Mesas</a></button></a>
@@ -39,5 +71,6 @@
             <button class="botaoMenu" href=""><a href="">Racks</a></button></a>
         </nav>
     </header>
+    <script src="/javascripts/menu.js"></script>
 </body>
 </html>

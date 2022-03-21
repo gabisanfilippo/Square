@@ -8,13 +8,15 @@
     <title>Login</title>
 </head>
 <body>
+    
     <%- include('./partials/header') %>
     <section class="cadastro">
         <form action="/users/login" method="post" class="formulario">
             <h1>Entre na sua conta!</h1>
+            <p id="error"></p>
             <input type="email" name="email" id="email" placeholder="Email:" required class="campos">
             <input type="password" name="senha" id="senha" placeholder="Senha:" required class="campos"> 
-            <button type="submit"  class="campos">Enviar</button>
+            <button type="submit"  class="campos" onclick="error()">Enviar</button>
         </form>
     </section>
     <%- include('./partials/footer') %>
