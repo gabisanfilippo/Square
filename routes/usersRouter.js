@@ -13,9 +13,9 @@ const loginMiddleware = require("../Middlewares/loginMiddleware")
 const cadastroRepetidoMiddleware = require("../Middlewares/cadastroRepetidoMiddleware")
 
 router.get("/cadastro", usersController.exibeCadastro)
-router.post("/cadastro", emptyCadastroMiddleware, cadastroRepetidoMiddleware, usersController.cadastraCadastro)
+router.post("/cadastro", emptyCadastroMiddleware, cadastroRepetidoMiddleware,usersController.cadastraCadastro)
 
 router.get("/login", usersController.exibeLogin)
-router.post("/login", emptyLoginMiddleware, loginMiddleware, usersController.logaLogin)
+router.post("/login", emptyLoginMiddleware,loginMiddleware,usersController.logaLogin)
 
 module.exports = router;

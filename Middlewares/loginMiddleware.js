@@ -1,27 +1,26 @@
-const usuariosModel = require("../models/users.json")
+const User = require("../database/models/User")
 
 const bcrypt = require('bcrypt')
-const { renderFile } = require("ejs")
 
 
-let loginMiddleware = (req,res,next) => {
+let loginMiddleware = async (req,res,next) => {
     let {email, senha} = req.body
-    let condicao = undefined
-    for(let i of usuariosModel){
-        if(bcrypt.compareSync(senha, i.senha) && email == i.email){
-            req.session.login = email
-        } else {
-            let compareHash = bcrypt.compareSync(senha, i.senha)
-            if(!compareHash){
-                return res.send("Senha incorreta")
-            }
-            if(email != i.email){
-                
-                return res.send("email não cadastrado")
-            }
-        }
+    let resultado = await User.findOne({
+        where: {
+            email: email
+        },
+        raw: true
+    })
+    
+    console.log(resultado)
+    if(!resultado){
+        return res.send("email não encontrado")
     }
-    next()
+    if (bcrypt.compareSync(senha, resultado.senha)){
+        next()
+    } else {
+        return res.send("senha incorreta")
+    }
 }
 
 module.exports = loginMiddleware

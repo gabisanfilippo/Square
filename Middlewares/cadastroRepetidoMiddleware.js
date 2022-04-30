@@ -1,12 +1,17 @@
-const usuariosModel = require("../models/users.json")
+const User = require("../database/models/User")
 
-let cadastroRepetidoMiddleware = (req,res,next) => {
+let cadastroRepetidoMiddleware = async (req,res,next) => {
     let {email} = req.body
-    for(let i of usuariosModel){
-        if(email == i.email){
-            return res.send("Usuário já cadastrado")
-        }
+    let resultado = await User.findOne({
+        where: {
+            email: email
+        },
+        raw: true
+    })
+    if(!resultado){
+        next()
+    }else{
+        res.send("email já cadastrado")
     }
-    next()
 }
 module.exports = cadastroRepetidoMiddleware
