@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+
+import {createGlobalStyle} from 'styled-components'
+import { BrowserRouter } from "react-router-dom";
+
+import RoutesApp from "./Routes";
+import Header from './components/Header'
+import Footer from './components/Footer';
+
+const GlobalStyle = createGlobalStyle`
+  @import url('http://fonts.cdnfonts.com/css/clash-display');
+  *{
+      margin: 0;
+      font-family: 'Clash Display', sans-serif;
+      box-sizing: border-box;
+      list-style: none;
+      padding: 0;
+  }
+  a,Link{
+    text-decoration: none;
+  }
+  a,button:hover{
+    cursor: pointer;
+  }
+`  
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App"> 
+      <GlobalStyle/>
+      <Header /> 
+      <RoutesApp/>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
