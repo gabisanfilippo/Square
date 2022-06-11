@@ -1,6 +1,11 @@
+import HeroBlocks from "../components/Home/HeroBlocks"
+
 function Home(){
     return(
-        <p>oi</p>
+        <section>
+            <HeroBlocks></HeroBlocks>
+            <p>oi</p>
+        </section>
     )
 }
 export default Home

@@ -26,8 +26,8 @@ function Footer(){
             <div className="line">
             </div>
             <div>
-                <img src="img/footer/instagram.svg" alt="" />
-                <img src="img/footer/facebook.svg" alt="" />
+                <img src="img/footer/instagram.svg" alt="instagram" />
+                <img src="img/footer/facebook.svg" alt="facebook" />
             </div>
         </S.Container>
     )
