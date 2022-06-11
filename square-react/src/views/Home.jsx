@@ -1,10 +1,11 @@
 import HeroBlocks from "../components/Home/HeroBlocks"
+import Features from "../components/Home/Features"
 
 function Home(){
     return(
         <section>
-            <HeroBlocks></HeroBlocks>
-            <p>oi</p>
+            <HeroBlocks/>
+            <Features/>
         </section>
     )
 }
