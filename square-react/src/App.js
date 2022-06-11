@@ -2,13 +2,13 @@ import './App.css';
 
 import {createGlobalStyle} from 'styled-components'
 import { BrowserRouter } from "react-router-dom";
+import {Helmet} from "react-helmet";
 
 import RoutesApp from "./Routes";
 import Header from './components/Header'
 import Footer from './components/Footer';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('http://fonts.cdnfonts.com/css/clash-display');
   *{
       margin: 0;
       font-family: 'Clash Display', sans-serif;
@@ -27,6 +27,12 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <BrowserRouter className="App"> 
+      <Helmet>
+        <link
+          href="https://fonts.cdnfonts.com/css/clash-display"
+          rel="stylesheet"
+        />
+      </Helmet>
       <GlobalStyle/>
       <Header /> 
       <RoutesApp/>
