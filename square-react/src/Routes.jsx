@@ -5,7 +5,7 @@ import Home from "./views/Home";
 const RoutesApp = () => {
    return(
         <Routes>
-            <Route exact path="/" component={Home}/>
+            <Route exact path="/" element={<Home/>}/>
         </Routes>
    )
 }
