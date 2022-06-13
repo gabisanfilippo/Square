@@ -44,5 +44,9 @@ export const Container = styled.header`
     .cart{
         margin-left: 3rem;
     }
+    li:hover{
+        border-bottom: 2px solid #2A254B;
+        cursor: pointer;
+    }
 `
 

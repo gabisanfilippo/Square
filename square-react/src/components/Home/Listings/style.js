@@ -15,4 +15,8 @@ export const Container = styled.div`
     .card{
         width: 20rem;
     }
+    .title:hover{
+        border-bottom: 2px solid #2A254B;
+        cursor: pointer;
+    }
 `;
