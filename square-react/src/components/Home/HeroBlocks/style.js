@@ -7,6 +7,7 @@ export const Container = styled.div`
     width: 70vw;
     margin: auto;
     margin-bottom: 5rem;
+    margin-top: 8rem;
     img{
         height: 32rem;
     }
