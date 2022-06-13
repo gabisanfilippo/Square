@@ -20,6 +20,11 @@ function Features(){
                     <p className='titleFeature'>Preços imbatíveis</p>
                     <p className='text'>Para nossos materiais e qualidade você não encontrará melhores preços em nenhum lugar</p>
                 </div>
+                <div className='feature'>
+                    <img src="img/home/custom.svg" alt="custom" id='custom' />
+                    <p className='titleFeature'>Projetos personlizáveis</p>
+                    <p className='text'>Faça um orçamento conosco e criamos o móvel perfeito para você</p>
+                </div>
             </div>
         </Container>
     )

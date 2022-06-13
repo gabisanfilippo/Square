@@ -11,7 +11,7 @@ export const Container = styled.div`
     }
     .feature{
         background-color: #F9F9F9;
-        width: 25vw;
+        width: 20vw;
         padding: 2rem;
         height: 15rem;
         display: flex;
@@ -34,6 +34,9 @@ export const Container = styled.div`
         padding: 1rem;
     }
     #card{
+        padding: 1rem;
+    }
+    #custom{
         padding: 1rem;
     }
 `;
