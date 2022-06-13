@@ -1,5 +1,3 @@
-import './App.css';
-
 import {createGlobalStyle} from 'styled-components'
 import { BrowserRouter } from "react-router-dom";
 import {Helmet} from "react-helmet";
