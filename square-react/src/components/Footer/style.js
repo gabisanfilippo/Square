@@ -23,5 +23,11 @@ export const Container = styled.footer`
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
+    .list{
+        display: flex;
+    }
+    #categorias{
+        margin-right: 10rem;
+    }
 `
 
