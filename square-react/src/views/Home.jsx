@@ -1,6 +1,7 @@
 import HeroBlocks from "../components/Home/HeroBlocks"
 import Features from "../components/Home/Features"
 import Listings from "../components/Home/Listings"
+import Budget from "../components/Home/Budget"
 
 function Home(){
     return(
@@ -8,6 +9,7 @@ function Home(){
             <HeroBlocks/>
             <Features/>
             <Listings/>
+            <Budget/>
         </section>
     )
 }
